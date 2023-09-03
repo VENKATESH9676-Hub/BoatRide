@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boat Ride Bill Automation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="background-color: mediumslateblue">
+    <h2>Boat Ride Bill Automation</h2>
+    <form action="" onsubmit="bookride()">
+      <table>
+        <tr>
+          <td class="rightside">Customer Name</td>
+          <td>
+            <input type="text" placeholder="Enter Your Name" />
+          </td>
+        </tr>
+        <tr>
+          <td>Phone Number</td>
+          <td><input type="text" placeholder="Phone Number" /></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td><input type="text" placeholder="Email" /></td>
+        </tr>
+        <tr>
+          <td>Number Of Persons</td>
+          <td><input type="number" id="persons" /></td>
+        </tr>
+        <tr>
+          <td>Boat Type</td>
+          <td>
+            <select id="boats">
+              <option value='{"seats":2,"amount":240}' id="seater1">
+                2 seater boat
+              </option>
+              <option value='{"seats":4,"amount":260}' id="seater2">
+                4 seater boat
+              </option>
+              <option value='{"seats":8,"amount":560}' id="seater3">
+                8 seater boat
+              </option>
+              <option value='{"seats":15,"amount":990}' id="seater4">
+                15 seater boat
+              </option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Travel Duration In Hours</td>
+          <td><input type="number" id="hours" /></td>
+        </tr>
+      </table>
+      <td style="margin-left: 40%">
+        <button>Book Ride</button>
+      </td>
+      <p id="bill"></p>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
